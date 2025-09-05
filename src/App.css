@@ -1,0 +1,60 @@
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.controls input[type="number"] {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #3b3b3b;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ball {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2b72ff, #6ecbff);
+  color: #0b0b0b;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.ball.bonus {
+  background: linear-gradient(135deg, #ffb800, #ffe27a);
+}
+
+.error {
+  color: #ff6b6b;
+}
